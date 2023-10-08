@@ -4,76 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>batman vs joker</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>    
 </head>
 <body>
     <header>
         <nav class="menu">
             <div class="bloque-1">
-                <button type="button" id="abrir"><img src="img/iconos/hamburgesa_boton1.png"></button>
-                <img src="img/iconos/image-removebg-preview.png">
-                <h1>ELENEMIGOS GAMES</h1>
+                <div class="bars__menu">
+                    <span class="line1__bars-menu"></span>
+                    <span class="line2__bars-menu"></span>
+                    <span class="line3__bars-menu"></span>
+                </div>
+                <div class="logo">
+                    <img src="img/iconos/joker_icono.png">
+                    <h1>ELENEMIGOS GAMES</h1>
+                </div>
             </div>
             <div class="bloque-2">
-                <input type="texte" placeholder="BUSCAR">
+                <input type="texte" placeholder="BUSCAR" class="inputnav">
+                <button type="button" class="btnbuscar"><img src="img/iconos/lupa2.png" alt="" class="imglupa"></button>
             </div>
             <div>
-                <button><img src="img/iconos/1.png" alt=""></button>
+                <button type="button" class="btncart"><img src="img/iconos/cart1.png" alt="" class="imgcart"></button>
             </div>
 
             <div class="hamburguesa">
-                <button type="button" id="cerrar">cerrar</button>
                 <div class="user">
-                    <img src="img/iconos/user.png" alt="">
-                    <img src="img/iconos/user.png" alt="" >
+                    <div class="backuser">
+                        <img src="img/iconos/usuario.png" alt="" >
+                    </div>
                     <p>Usuario</p>
                 </div>
-                <ul>
-                    <li>
-                        Inicio
-                    </li>
-                    <li>
-                        Mi cuenta
-                    </li>
-                    <li>
-                        Notificaciones
-                    </li>
-                    <li>
-                        hitorial
-                    </li>
-                    <li>
-                        Asistencia
-                    </li>
-                    <li>
-                        Favoritos
-                    </li>
-                    <li>
-                        Configuraciones
-                    </li>
-                    <li>
-                        Cerrar sesion
-                    </li>
-                </ul>
+                <div class="list-menu">
+                    <ul>
+                        <li>
+                            <span>Inicio</span>
+                        </li>
+                        <li>
+                            <span>Mi cuenta</span>
+                        </li>
+                        <li>
+                            <span>Notificaciones</span>
+                        </li>
+                        <li>
+                            <span>hitorial</span>
+                        </li>
+                        <li>
+                            <span>Asistencia</span>
+                        </li>
+                        <li>
+                            <span>Favoritos</span>
+                        </li>
+                        <li>
+                            <span>Configuraciones</span>
+                        </li>
+                        <li>
+                            <span>Cerrar sesion</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="carrito">
                 <h2>carrito</h2>
+                <div class="cartgame">
+                    <div >
+                        <img src="img/Juegos/bloodborne.avif" alt="">
+                    </div>
+                    <div class="textgame">
+                        <div>
+                            <span>Bloodborne</span>
+                        </div>
+                        <div class="precioycantidad">
+                            <span>$10000</span>
+                            <span>cant: 1</span>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
     <article>
-        <h2>BATMAN VS JOKER</h2>
         <section>
             <img src="img/Juegos/batman-vs-joker.PNG" alt="">
         </section>
     </article>
+        <p class="breadcrumb">Home > Batman vs joker</p>
         <section class="game">
             <h2>BATMAN VS JOKER</h2>
             <div class="ce">
                 <img src="img/Juegos/batmanvsjoker4enlinea.png" alt="" class="imggame">
             </div>
-            <div class="end"><button class="share"><img src="img/iconos/compartir.png" alt=""></button></div>
-            <section class="margencostados">
+            <div class="botonesjuegos">
+                <div class="buttons">
+                    <button class="btn"><img src="img/iconos/corazon.png" alt=""></button>
+                    <button class="btn"><img src="img/iconos/corazon roto.png" alt=""></button>
+                </div>
+                <button class="noselect view-modal btn pop"><span class='text'>Comparte</span><span class="icon"><img src="img/iconos/compartir.png" alt=""></span></button>
+                <div class="popup">
+                    <div class="shareup">
+                    <span>Compartir</span>
+                    <div class="close"><img class="closeimg" src="img/iconos/close.png" alt=""></i></div>
+                    </div>
+                    <div class="content">
+                    <p>compartir via</p>
+                    <ul class="icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </ul>
+                    <p>o copiar link</p>
+                    <div class="field">
+                        <i class="url-icon uil uil-link"></i>
+                        <input type="text" readonly value="example.com/share-link">
+                        <button>Copiar</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <section class="margencostados bajar">
                 <h3>Descripcion</h3>
                 <p>Los jugadores escogen las fichas del equipo que les corresponda y las colocan en la rejilla, comenzando por el centro o el borde, e intentan alinear 4 en horizontal, vertical o diagonal. Utiliza la estrategia para bloquear a tu adverario mientras intentas ser el primero en colocar 4 en lina para ganar</p>
             </section>
@@ -94,34 +147,141 @@
                 </div>
             </section>
         </section>
-
+        
         <section class="imgjugar">
-            <img src="img/iconos/game1.png" alt="">
-            <img src="img/iconos/game2.png" alt="">
-            <img src="img/iconos/game3.png" alt="">
-            <img src="img/iconos/game4.png" alt="">
-        </section>
-        <section class="comentarios">
-        <div class="column">
-            <div>
-                <img  alt="">
-                <h3>Comentarios</h3>
+            <h2>Imagenes del juego</h2>
+            <div class="rowcont">
+                <img src="img/iconos/game1.png" alt="">
+                <img src="img/iconos/game2.png" alt="">
+                <img src="img/iconos/game3.png" alt="">
+                <img src="img/iconos/game4.png" alt="">
             </div>
-            <div class="comentario">
-                <div class="usercoment">
-                    <img class="imguser" src="img/iconos/user.png" alt="">
-                    <p>Tú</p>
-                </div>
-                <div>
-                    <input type="text">
-                </div>
-            </div>
-        </div>
-        <div>
-
-        </div>
+            
         </section>
+        
     </article>
+
+    <section class="comentar">
+        <div class="comentarios">
+            <div class="comenta">
+                <div>
+                    <img  alt="">
+                    <h3>Comentarios</h3>
+                </div>
+                <div class="comentario">
+                    <div class="usercoment">
+                        <img class="imguser" src="img/iconos/user.png" alt="">
+                        <p>Tú</p>
+                    </div>
+                    <div class="comp2">
+                        <input type="text" class="inputcomentario" placeholder="¿Que piensas?">
+                    </div>
+                </div>
+            </div>
+            <div >
+                <h3 class="centrarcont">Más destacados</h3>
+                <div class="pdcomentario">
+                    <div class="comentario">
+                        <div class="usercoment">
+                            <img class="imguser" src="img/iconos/user.png" alt="">
+                            <p>Persona 1</p>
+                        </div>
+                        <div class="comp3">
+                            <p>Muy buen juego</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcomentario">
+                    <div class="comentario">
+                        <div class="usercoment">
+                            <img class="imguser" src="img/iconos/user.png" alt="">
+                            <p>Persona 1</p>
+                        </div>
+                        <div class="comp3">
+                            <p>Muy buen juego</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcomentario">
+                    <div class="comentario">
+                        <div class="usercoment">
+                            <img class="imguser" src="img/iconos/user.png" alt="">
+                            <p>Persona 1</p>
+                        </div>
+                        <div class="comp3">
+                            <p>Muy buen juego</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcomentario">
+                    <div class="comentario">
+                        <div class="usercoment">
+                            <img class="imguser" src="img/iconos/user.png" alt="">
+                            <p>Persona 1</p>
+                        </div>
+                        <div class="comp3">
+                            <p>Muy buen juego</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcomentario">
+                    <div class="comentario">
+                        <div class="usercoment">
+                            <img class="imguser" src="img/iconos/user.png" alt="">
+                            <p>Persona 1</p>
+                        </div>
+                        <div class="comp3">
+                            <p>Muy buen juego</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="juegossugeridos">
+            <h3>Juegos sugeridos</h3>
+            <div class="grupojuegos">
+                <div class="card">
+                    <img src="img/Juegos/batman-vs-joker-2835193.webp" alt="">
+                    <a href=""><button class="btn_card">JUGAR</button></a>
+                    <div class="free"><h4>GRATIS</h4></div>
+                    <div class="nameg"><p>Batman vs Joker</p></div>
+                </div>
+                <div class="card">
+                    <img src="img/Juegos/pac-man.webp" alt="">
+                    <a href=""><button class="btn_card">JUGAR</button></a>
+                    <div class="free"><h4>GRATIS</h4></div>
+                    <div class="nameg"><p>Pac-Man</p></div>
+                </div>
+            </div>
+            <div class="grupojuegos">
+                <div class="card">
+                    <img src="img/Juegos/batman-vs-joker-2835193.webp" alt="">
+                    <a href=""><button class="btn_card">JUGAR</button></a>
+                    <div class="free"><h4>GRATIS</h4></div>
+                    <div class="nameg"><p>Batman vs Joker</p></div>
+                </div>
+                <div class="card">
+                    <img src="img/Juegos/pac-man.webp" alt="">
+                    <a href=""><button class="btn_card">JUGAR</button></a>
+                    <div class="free"><h4>GRATIS</h4></div>
+                    <div class="nameg"><p>Pac-Man</p></div>
+                </div>
+            </div>
+            <div class="grupojuegos">
+                <div class="card">
+                    <img src="img/Juegos/batman-vs-joker-2835193.webp" alt="">
+                    <a href=""><button class="btn_card">JUGAR</button></a>
+                    <div class="free"><h4>GRATIS</h4></div>
+                    <div class="nameg"><p>Batman vs Joker</p></div>
+                </div>
+                <div class="card">
+                    <img src="img/Juegos/pac-man.webp" alt="">
+                    <a href=""><button class="btn_card">JUGAR</button></a>
+                    <div class="free"><h4>GRATIS</h4></div>
+                    <div class="nameg"><p>Pac-Man</p></div>
+                </div>
+            </div>
+    </section>
     
     <footer class="column">
             <div class="centertext">
@@ -136,22 +296,46 @@
                     <p>08002845</p>
                     <p>elenemigos-support@hotmail.com</p>
                 </div>
-                <div class="itemf centertext column">
-                    <h3>Redes Sociales</h3> 
-                    <button type="button"><img src="img/iconos/facebook.png" alt="">ElEnemigos.fc</button>
-                    <button type="button"><img src="img/iconos/instagram.png" alt="">ElEnemigos.ins</button>
+                <div class="main">
+                    <h3>Redes sociales</h3>
+                    <div class="icons">
+                        <div class="icon fb">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span>ElEnemigos</span>
+                        </div>
+                
+                        <!-- Twitter Icon -->
+                        <div class="icon twt">
+                            <i class="fa-brands fa-twitter"></i>
+                            <span>ElEnemigos</span>
+                        </div>
+                
+                        <!-- Linkedin Icon -->
+                        <div class="icon lnk">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>ElEnemigos</span>
+                        </div>
+        
+                        <!-- YouTube Icon -->
+                        <div class="icon yt">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>ElEnemigos</span>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="itemf centertext">
+                <div class="  itemf centertext soporte">
                     <h3>Soporte</h3>
                     <p>centro de ayuda</p>
                     <p>guias</p>
                 </div>
-                <div class="itemf centertext">
+                <div class="itemf centertext noticias">
                     <h3>Noticas</h3>
                     <p>Blog</p>
                     <p>Espacio de prensa</p>
                 </div>
             </div>
     </footer>
+      <script src="js/hamburguesa.js"></script>
 </body>
 </html>

@@ -1,27 +1,4 @@
-const nav = document.querySelector(".hamburguesa");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
-const card = document.querySelector(".card");
-/*card.addEventListener("mouseover",showButton);
-card.addEventListener("mouseout",hidenButton);*/
 
-abrir.addEventListener("click", () => {
-    nav.classList.add("abrir-menu");
-    nav.classList.remove("hamburguesa");
-})
-
-cerrar.addEventListener("click", () => {
-    nav.classList.remove("abrir-menu");
-    nav.classList.add("hamburguesa");
-})
-
-/*function hidenButton(){
-    document.querySelector(".btn_card").classList.remove("hiden")
-}
-
-function showButton(){
-    document.querySelector(".hiden").classList.remove("hiden")
-}*/
 
 
 ///////////////////////////////////////////////////////////////////////
