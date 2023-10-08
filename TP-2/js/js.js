@@ -1,7 +1,3 @@
-
-
-
-///////////////////////////////////////////////////////////////////////
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
@@ -60,5 +56,27 @@ const initSlider = () => {
         handleSlideButtons();
     });
 }
+
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+var percent = document.querySelector('.percent');
+var progress = document.querySelector('.progress');
+var load = document.querySelector('.loading')
+var count = 4;
+var per = 16;
+var loading = setInterval(animate, 50);
+function animate(){
+  if(count == 100 && per == 400){
+    clearInterval(loading);
+    setTimeout(ocultarLoading,1000);
+  }else{
+    per = per + 4;
+    count = count + 1;
+    progress.style.width = per + 'px';
+    percent.textContent = count + '%';
+  }
+}
+function ocultarLoading(){
+  load.classList.add("hiden")
+}
+

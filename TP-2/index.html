@@ -9,164 +9,351 @@
     <title>elenemigos games</title>
 </head>
 <body>
+    <div class="loading">
+        <span class="loader"></span>
+        <label class="percent">100%</label>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+    </div>
     <header>
         <nav class="menu">
             <div class="bloque-1">
-                <button type="button" id="abrir"><img src="img/iconos/hamburgesa_boton1.png"></button>
-                <img src="img/iconos/joker_icono.png">
-                <h1>ELENEMIGOS GAMES</h1>
+                <div class="bars__menu">
+                    <span class="line1__bars-menu"></span>
+                    <span class="line2__bars-menu"></span>
+                    <span class="line3__bars-menu"></span>
+                </div>
+                <div class="logo">
+                    <img src="img/iconos/joker_icono.png">
+                    <h1>ELENEMIGOS GAMES</h1>
+                </div>
             </div>
             <div class="bloque-2">
-                <input type="texte" placeholder="BUSCAR">
+                <input type="texte" placeholder="BUSCAR" class="inputnav">
+                <button type="button" class="btnbuscar"><img src="img/iconos/lupa2.png" alt="" class="imglupa"></button>
             </div>
             <div>
-                <button><img src="img/iconos/1.png" alt=""></button>
+                <button type="button" class="btncart"><img src="img/iconos/cart1.png" alt="" class="imgcart"></button>
             </div>
-
             <div class="hamburguesa">
-                <button type="button" id="cerrar">cerrar</button>
                 <div class="user">
-                    <img src="img/iconos/user.png" alt="">
+                    <div class="backuser">
+                        <img src="img/iconos/usuario.png" alt="" >
+                    </div>
                     <p>Usuario</p>
                 </div>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Mi cuenta</li>
-                    <li>Notificaciones </li>
-                    <li>hitorial</li>
-                    <li>Asistencia</li>
-                    <li>Favoritos</li>
-                    <li>Configuraciones</li>
-                    <li>Cerrar sesion</li>
-                </ul>
+                <div class="list-menu">
+                    <ul>
+                        <li><span>Inicio</span></li>
+                        <li><span>Mi cuenta</span></li>
+                        <li><span>Notificaciones</span></li>
+                        <li><span>hitorial</span></li>
+                        <li><span>Asistencia</span></li>
+                        <li><span>Favoritos</span></li>
+                        <li><span>Configuraciones</span></li>
+                        <li><span>Cerrar sesion</span></li>
+                    </ul>
+                </div>
             </div>
             <div class="carrito">
                 <h2>carrito</h2>
+                <div class="cartgame">
+                    <div >
+                        <img src="img/Juegos/bloodborne.avif" alt="">
+                    </div>
+                    <div class="textgame">
+                        <div>
+                            <span>Bloodborne</span>
+                        </div>
+                        <div class="precioycantidad">
+                            <span>$10000</span>
+                            <span>cant: 1</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
     <div class="container">
         <article class="destacados">
             <h1>MÁS DESTACADOS</h1>
-            <ul class="slider">
-                <section id="slider1" class="juego"> 
-                    <img src="img/Juegos/batman-vs-joker-2835193.webp" alt="">
-                    <div class="info-juego" >
-                        <p>Batman vs Joker</p>
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <a href="batmanvsjoker.html"><button>JUGAR</button></a>
-                    </div>
-                </section>
-                <section id="slider2" class="juego"> 
-                    <img src="img/Juegos/sekiro.avif" alt="">
-                    <div class="info-juego" >
-                        <p>Sekiro</p>
-                        <p>⭐⭐⭐⭐⭐</p>
-                        <a href="batmanvsjoker.html"><button>JUGAR</button></a>
-                    </div>
-                </section>
-            </ul>
-            <ul class="selector">
-                <li><a href="#slider1">1</a></li>
-                <li><a href="#slider2">1</a></li>
-                <li><a href="">1</a></li>
-                <li><a href="">1</a></li>
-            </ul>
-        </article>
-        <article class="carrusel">
-            <p>MÁS JUGADOS</p>
-            <div class="slider-wrapper">
-                <ul class="image-list">
-                    <div class="card">
-                        <img src="img/Juegos/batman-vs-joker-2835193.webp" alt="">
-                        <a href=""><button class="btn_card">JUGAR</button></a>
-                        <div class="free"><h4>GRATIS</h4></div>
-                        <div class="nameg"><p>Batman vs Joker</p></div>
-                    </div>
-                    <div class="card">
-                        <img src="img/Juegos/pac-man.webp" alt="">
-                        <a href=""><button class="btn_card">JUGAR</button></a>
-                        <div class="free"><h4>GRATIS</h4></div>
-                        <div class="nameg"><p>Pac-Man</p></div>
-                    </div>
-                    <div class="card">
-                        <img src="img/Juegos/pac-man.webp" alt="">
-                        <a href=""><button class="btn_card">JUGAR</button></a>
-                        <div class="free"><h4>GRATIS</h4></div>
-                        <div class="nameg"><p>Pac-Man</p></div>
-                    </div>
-                    <div class="card">
-                        <img src="img/Juegos/pac-man.webp" alt="">
-                        <a href=""><button class="btn_card">JUGAR</button></a>
-                        <div class="free"><h4>GRATIS</h4></div>
-                        <div class="nameg"><p>Pac-Man</p></div>
-                    </div>
+            <div class="slider">
+                <ul>
+                    <li id="slider1">
+                        <img src="img/juegos/batman-vs-joker-2835193.webp">
+                        <div class="text">
+                            <h3>Batman vs Joker</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <a href="batmanvsjoker.html" class="rainbow-button">PLAY</a>
+                        </div>
+                    </li>
+                    <li id="slider2">
+                        <img src="img/juegos/Cyberpunk-2077.jpg">
+                        <div class="text">
+                            <h3>Cyberpunk-2077</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <a href="#" class="rainbow-button">PLAY</a>
+                        </div>
+                    </li >
+                    <li id="slider3">
+                        <img src="img/juegos/Call-of-Duty-1.jpg">
+                        <div class="text">
+                            <h3>Call-of-Duty-1</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <a href="#" class="rainbow-button">PLAY</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/juegos/donkey kong.jpeg">
+                        <div class="text">
+                            <h3>Donkey Kong</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <a href="#" class="rainbow-button">PLAY</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </article>
-        <article class="carrusel">
-            <p>MÁS JUGADOS</p>
-            <div class="slider-wrapper">
-                <ul class="image-list">
-                <div class="card">
-                    <img src="img/Juegos/batman-vs-joker-2835193.webp" alt="">
-                    <a href=""><button class="btn_card">JUGAR</button></a>
-                    <div class="free"><h4>GRATIS</h4></div>
-                    <div class="nameg"><p>Batman vs Joker</p></div>
-                </div>
-                <div class="card">
-                    <img src="img/Juegos/pac-man.webp" alt="">
-                    <a href=""><button class="btn_card">JUGAR</button></a>
-                    <div class="free"><h4>GRATIS</h4></div>
-                    <div class="nameg"><p>Pac-Man</p></div>
-                </div>
-                <div class="card">
-                    <img src="img/Juegos/pac-man.webp" alt="">
-                    <a href=""><button class="btn_card">JUGAR</button></a>
-                    <div class="free"><h4>GRATIS</h4></div>
-                    <div class="nameg"><p>Pac-Man</p></div>
-                </div>
-                <div class="card">
-                    <img src="img/Juegos/pac-man.webp" alt="">
-                    <a href=""><button class="btn_card">JUGAR</button></a>
-                    <div class="free"><h4>GRATIS</h4></div>
-                    <div class="nameg"><p>Pac-Man</p></div>
-                </div>
-        </article>
-        <article class="carrusel">
-            <p>MÁS JUGADOS</p>
-            <div class="slider-wrapper">
-                <ul class="image-list">
-                <div class="card">
-                    <img src="img/Juegos/batman-vs-joker-2835193.webp" alt="">
-                    <div>
-                        <a href=""><button class="btn_card">JUGAR</button></a>
-                        <div class="free"><h4>GRATIS</h4></div>
-                        <div class="nameg"><p>Batman vs Joker</p></div>
+        <article>
+            <section class="carousel">
+                <h2 class="categories__title">My List</h2>
+                <div class="carousel__container">
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/batman-vs-joker-2835193.webp" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                            <a href="batmanvsjoker.html"><button><span>JUGAR</span></button></a>
+                            <p class="carousel-item__details--subtitle">Batman vs Joker</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/bloodborne.avif" alt="people"/>
+                        <div class="carousel-item__details">
+                        <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                        <button><span>JUGAR</span></button>
+                        <p class="carousel-item__details--subtitle">bloodborne</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/pac-man.webp" alt="people"/>
+                    <div class="carousel-item__details">
+                        <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                        <button><span>JUGAR</span></button>
+                        <p class="carousel-item__details--subtitle">Pac-Man</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/donkey kong.jpeg" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--precio">$10000</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Donkey Kong</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/los_simpson.jpg" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--precio">$10000</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Los simpson: hit and run</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/Juegos/pac-man.webp" alt="">
-                    <a href=""><button class="btn_card">JUGAR</button></a>
-                    <div class="free"><h4>GRATIS</h4></div>
-                    <div class="nameg"><p>Pac-Man</p></div>
+            </section>
+            <section class="carousel">
+                <h2 class="categories__title">My List</h2>
+                <div class="carousel__container">
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/batman-vs-joker-2835193.webp" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Batman vs Joker</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/bloodborne.avif" alt="people"/>
+                        <div class="carousel-item__details">
+                        <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                        <button><span>JUGAR</span></button>
+                        <p class="carousel-item__details--subtitle">bloodborne</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/pac-man.webp" alt="people"/>
+                    <div class="carousel-item__details">
+                        <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                        <button><span>JUGAR</span></button>
+                        <p class="carousel-item__details--subtitle">Pac-Man</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/donkey kong.jpeg" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--precio">$10000</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Donkey Kong</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/los_simpson.jpg" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--precio">$10000</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Los simpson: hit and run</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="img/Juegos/pac-man.webp" alt="">
-                    <a href=""><button class="btn_card">JUGAR</button></a>
-                    <div class="free"><h4>GRATIS</h4></div>
-                    <div class="nameg"><p>Pac-Man</p></div>
+            </section>
+            <section class="carousel">
+                <h2 class="categories__title">My List</h2>
+                <div class="carousel__container">
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/batman-vs-joker-2835193.webp" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Batman vs Joker</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/bloodborne.avif" alt="people"/>
+                        <div class="carousel-item__details">
+                        <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                        <button><span>JUGAR</span></button>
+                        <p class="carousel-item__details--subtitle">bloodborne</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/pac-man.webp" alt="people"/>
+                    <div class="carousel-item__details">
+                        <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                        <button><span>JUGAR</span></button>
+                        <p class="carousel-item__details--subtitle">Pac-Man</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/donkey kong.jpeg" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--precio">$10000</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Donkey Kong</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/los_simpson.jpg" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--precio">$10000</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Los simpson: hit and run</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="img/Juegos/pac-man.webp" alt="">
-                    <a href=""><button class="btn_card">JUGAR</button></a>
-                    <div class="free"><h4>GRATIS</h4></div>
-                    <div class="nameg"><p>Pac-Man</p></div>
+            </section>
+            <section class="carousel">
+                <h2 class="categories__title">My List</h2>
+                <div class="carousel__container">
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/batman-vs-joker-2835193.webp" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Batman vs Joker</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/bloodborne.avif" alt="people"/>
+                        <div class="carousel-item__details">
+                        <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                        <button><span>JUGAR</span></button>
+                        <p class="carousel-item__details--subtitle">bloodborne</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/pac-man.webp" alt="people"/>
+                    <div class="carousel-item__details">
+                        <h3 class="carousel-item__details--gratis">GRTATIS</h3>
+                        <button><span>JUGAR</span></button>
+                        <p class="carousel-item__details--subtitle">Pac-Man</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/donkey kong.jpeg" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--precio">$10000</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Donkey Kong</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-item__img" src="img/juegos/los_simpson.jpg" alt="people"/>
+                        <div class="carousel-item__details">
+                            <h3 class="carousel-item__details--precio">$10000</h3>
+                            <button><span>JUGAR</span></button>
+                            <p class="carousel-item__details--subtitle">Los simpson: hit and run</p>
+                        </div>
+                    </div>
                 </div>
-        </article>
-        <footer>
+            </section>
             
-        </footer>
+        </article>
+
+        <footer class="column">
+            <div class="centertext">
+                <h2>Acerca del ElenemigosGames</h2>
+                <p>
+                    Deja de estar aburrido con ELEnemigos Games! con nuestra increible seleccion de juegos, para que lleves la diversion al siguiente nivel. Tambien tenemos los mejores precios, para que no pares de divertirte!
+                </p>
+            </div>
+            <div class="footeritems">
+                <div class="itemf centertext">
+                    <h3>Contacto</h3>
+                    <p>08002845</p>
+                    <p>elenemigos-support@hotmail.com</p>
+                </div>
+                <div class="main">
+                    <h3>Redes sociales</h3>
+                    <div class="icons">
+                        <div class="icon fb">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span>ElEnemigos</span>
+                        </div>
+                
+                        <!-- Twitter Icon -->
+                        <div class="icon twt">
+                            <i class="fa-brands fa-twitter"></i>
+                            <span>ElEnemigos</span>
+                        </div>
+                
+                        <!-- Linkedin Icon -->
+                        <div class="icon lnk">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>ElEnemigos</span>
+                        </div>
+        
+                        <!-- YouTube Icon -->
+                        <div class="icon yt">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>ElEnemigos</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="  itemf centertext soporte">
+                    <h3>Soporte</h3>
+                    <p>centro de ayuda</p>
+                    <p>guias</p>
+                </div>
+                <div class="itemf centertext noticias">
+                    <h3>Noticas</h3>
+                    <p>Blog</p>
+                    <p>Espacio de prensa</p>
+                </div>
+            </div>
+    </footer>
+        <script src="js/hamburguesa.js"></script>
         <script src="./js/js.js"></script>
     </div>
 </body>
