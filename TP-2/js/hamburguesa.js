@@ -13,6 +13,21 @@ function animateBars(){
 const nav = document.querySelector(".hamburguesa");
 const abrir = document.querySelector(".bars__menu");
 
+document.querySelector(".barsmenu").addEventListener("click", animateBars);
+
+var line1bars = document.querySelector(".line1bars-menu");
+var line2bars = document.querySelector(".line2bars-menu");
+var line3bars = document.querySelector(".line3bars-menu");
+
+function animateBars(){
+    line1bars.classList.toggle("activeline1bars-menu");
+    line2bars.classList.toggle("activeline2bars-menu");
+    line3bars.classList.toggle("activeline3bars-menu");
+}
+
+const nav = document.querySelector(".hamburguesa");
+const abrir = document.querySelector(".barsmenu");
+
 abrir.addEventListener("click", () => {
     nav.classList.add("abrir-menu");
     nav.classList.toggle("hamburguesa");
