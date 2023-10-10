@@ -4,7 +4,7 @@ window.onload = function (event) {
     var app = new App();
     window.app = app;
 };
-
+window.Location
 App.prototype.processingButton = function(event) {
     const btn = event.currentTarget;
     const slickList = event.currentTarget.parentNode;
@@ -54,8 +54,6 @@ function ocultarLoading(){
   load.classList.add("hiden")
 }
 
-
-
 /*******login***********/
 
 const signUpButton = document.getElementById('signUp');
@@ -68,4 +66,19 @@ signUpButton.addEventListener('click', () => {
 
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
+});
+
+
+
+
+/*****registrar*******/
+let button = document.querySelector('.registerbutton');
+let animacion = document.querySelector('.wrapper');
+
+
+button.addEventListener("click", ()=>{
+  animacion.style.display="flex";
+  setTimeout(function() {
+    window.location.href = 'index.html';
+  }, 2000);
 });

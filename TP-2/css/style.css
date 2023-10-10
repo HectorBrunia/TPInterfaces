@@ -347,6 +347,9 @@ nav img{
 }
 /************************login & register********************************/
 
+.wrapper{
+  height:100vh;display:none;justify-content:center;align-items:center;background-color:white}.checkmark__circle{stroke-dasharray: 166;stroke-dashoffset: 166;stroke-width: 2;stroke-miterlimit: 10;stroke: #7ac142;fill: none;animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards}.checkmark{width: 56px;height: 56px;border-radius: 50%;display: block;stroke-width: 2;stroke: #fff;stroke-miterlimit: 10;margin: 10% auto;box-shadow: inset 0px 0px 0px #7ac142;animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both}.checkmark__check{transform-origin: 50% 50%;stroke-dasharray: 48;stroke-dashoffset: 48;animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards}@keyframes stroke{100%{stroke-dashoffset: 0}}@keyframes scale{0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}}@keyframes fill{100%{box-shadow: inset 0px 0px 0px 30px #7ac142}}
+
 .captcha{
   width: 280px;
   height: 70px;
@@ -420,7 +423,7 @@ nav img{
 	border-color: #FFFFFF;
 }
 
-.containerl form {
+.containerl .formregister,  .containerl .forminic{
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -447,7 +450,7 @@ nav img{
 	position: relative;
 	overflow: hidden;
 	width: 768px;
-  height: 600px;
+  height: 650px;
 	max-width: 100%;
 	min-height: 480px;
 }
@@ -620,7 +623,7 @@ background: linear-gradient(90deg, rgba(79,27,17,1) 0%, rgba(255,75,43,1) 25%, r
   background-color: rgb(35,17,35);
   position: relative;
   margin: 0px auto;
-  margin-top: 92px;
+  margin-top: 30px;
   overflow: hidden;
 }
 .slider{
@@ -690,12 +693,19 @@ background: linear-gradient(90deg, rgba(79,27,17,1) 0%, rgba(255,75,43,1) 25%, r
 }
 }
 /******************************************/
+.Carousel::-webkit-scrollbar{
+  height: 10px;
+}
+.Carousel::-webkit-scrollbar-thumb{
+  background: rgb(208,113,26);
+  border-radius: 10px;
+}
 .Carousel{
   background-color: rgb(35, 17, 35);
   width: 100%;
   margin: 0px auto;
   border: 2px solid rgb(208,113,26);
-  margin-top: 92px;
+  margin-top: 30px;
 }
 .Carousel h2, .destacados h2{
   font-size: 26px;
@@ -1015,7 +1025,7 @@ background: linear-gradient(90deg, rgba(79,27,17,1) 0%, rgba(255,75,43,1) 25%, r
 
 
 footer{
-  margin-top: 92px;
+  margin-top: 30px;
   background-color: black;
   padding: 100px;
   display: flex;
@@ -1564,7 +1574,7 @@ button{
 	transition: 200ms;
 }
 
-.noselect .text {
+.noselect .textc {
   margin-left: -10px;
 	transform: translateX(35px);
 	color:#000;
