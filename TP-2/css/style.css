@@ -55,7 +55,7 @@ h2{
 .progress{
   width: 203px;
   height: 16px;
-  background: #f60d54;
+  background: rgb(205, 108, 18);
   border-radius: 13px;
 }
 .percent{
@@ -63,7 +63,7 @@ h2{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fdb5ca;
+  color: rgb(243, 158, 79);
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -95,7 +95,7 @@ h2{
   animation: rotation 2s ease-in-out infinite;
 }
 .loader::after {
-  border-color: #FF3D00;
+  border-color: rgb(208,113,26);
   animation-delay: 1s;
 }
 
@@ -579,10 +579,6 @@ background: linear-gradient(90deg, rgba(79,27,17,1) 0%, rgba(255,75,43,1) 25%, r
 	width: 40px;
 }
 
-
-
-
-
 .formulario, .ingreso-alt, .free, .nameg, .precio, .juego{
     align-items: center;
 }
@@ -781,6 +777,11 @@ background: linear-gradient(90deg, rgba(79,27,17,1) 0%, rgba(255,75,43,1) 25%, r
   margin-top: 35%;
   margin-left: 20%;
 }
+.slick .carro{
+  margin-top: 35%;
+  width: 80%;
+  margin-left: 2%;
+}
 .slick button span{
   background-color: rgb(35,17,35);
   padding: 10px 24px;
@@ -867,6 +868,11 @@ background: linear-gradient(90deg, rgba(79,27,17,1) 0%, rgba(255,75,43,1) 25%, r
   .slick button{
     top: -5%;
     left: 18%;
+  }
+  .slick .carro{
+    margin-top: 35%;
+    width: 50%;
+    margin-left: 10%;
   }
 }
 .text a{
